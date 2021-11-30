@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/colors.scss';
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./assets/fonts/myriad-pro/MYRIADPRO-REGULAR.OTF');
+}
+
+* {
+  margin: 0;
+  font-family: 'Myriad Pro';
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main';
+}
+.header {
+  grid-area: header;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+
+  background-color: $bg-header;
+  border-bottom: 2px solid $border-bottom-header;
+}
+.main {
+  grid-area: main;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.justify-btw {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

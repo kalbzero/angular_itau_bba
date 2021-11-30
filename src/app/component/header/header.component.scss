@@ -1,0 +1,44 @@
+@import '../../../assets/styles/colors.scss';
+
+.header {
+
+  &__logo {
+    width: 20%;
+    height: 100%;
+  }
+
+  &__language {
+    border-right: 1px solid $border-right-language;
+    margin-right: 15px;
+    padding-right: 15px;
+    height: 50px;
+
+    &-space {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+
+  &__perfil {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+
+    &-infos {
+      margin-right: 10px;
+    }
+  }
+
+  &__username {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__office {
+    font-size: 12px;
+    font-weight: lighter;
+    opacity: 0.5;
+  }
+}
+
