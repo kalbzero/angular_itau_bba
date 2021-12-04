@@ -12,8 +12,8 @@ Criar duas telas, uma listando as empresas e a outra para ver/editar as informa√
 
 ## Requisitos
 
-- Projeto 100% Angular
-- Layout fiel aoproposto
+- Projeto 100% Angular :green_circle:
+- Layout fiel ao proposto
 - Sistema de Rotas
 - Usar CSS Grid
 - Sass (.sass ou .scss)
