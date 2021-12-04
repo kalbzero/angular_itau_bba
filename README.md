@@ -12,14 +12,22 @@ Criar duas telas, uma listando as empresas e a outra para ver/editar as informa�
 
 ## Requisitos
 
+Status:
+
+:green_circle: Pronto!
+
+:yellow_circle: Andamento
+
+:white_circle: Não iniciado
+
 - Projeto 100% Angular :green_circle:
-- Layout fiel ao proposto
-- Sistema de Rotas
-- Usar CSS Grid
-- Sass (.sass ou .scss)
-- Máscara nos inputs
-- Componentes do Angular Material
-- Obrigatóriedade de todos os campos usando RxForms
+- Layout fiel ao proposto :yellow_circle:
+- Sistema de Rotas :green_circle:
+- Usar CSS Grid :green_circle:
+- Sass (.sass ou .scss) :green_circle:
+- Máscara nos inputs :yellow_circle:
+- Componentes do Angular Material :green_circle:
+- Obrigatóriedade de todos os campos usando RxForms :green_circle:
 
 - Interceptors
 - Uso avançado da linguagem
