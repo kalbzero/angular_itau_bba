@@ -1,0 +1,49 @@
+@import '../../../assets/styles/colors.scss';
+
+.form {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-family: 'Myriad Pro';
+
+  &__header {
+    padding-bottom: 2%;
+
+    &-title {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    &-subtitle {
+      opacity: 0.6;
+      font-size: 16px;
+    }
+  }
+
+  &__container {
+    padding-bottom: 5%;
+
+    &-endereco {
+      padding-bottom: 3%;
+    }
+  }
+
+  &__business {
+    padding-bottom: 3%;
+  }
+
+  &__buttons {
+
+    &-voltar {
+      background-color: #989898;
+      color: #FFFFFF;
+      margin-right: 10px;
+    }
+    &-salvar {
+      background-color: #FA8341;
+      color: #FFFFFF;
+      width: 125px;
+    }
+  }
+}

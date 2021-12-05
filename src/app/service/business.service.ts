@@ -51,4 +51,23 @@ export class BusinessService {
   getBusinessList(): Observable<IBusiness[]> {
     return of(this.business);
   }
+
+  /**
+   * Para evitar o alerta 'Not all code paths return a value' adicionei uma variável para armazenar o objeto.
+   * Pois não é muito recomendado pela comunidade do stackOverFlow mudar a regra no arquivo tsconfig para '"noImplicitReturns": false,'.
+   *
+   * Por algum motivo, o id estava vindo 'string' mesmo tipando para 'number' e o if sempre dava false, pois comparava number com string. Então deixei string e usei o parseInt no IF.
+   *
+   * @param id identificador do objeto Business
+   * @returns o objeto business com o id igual ao recebido no parâmetro
+   */
+  getBusinessById(id: string): Observable<IBusiness> {
+    let objBusiness: IBusiness = {} as IBusiness;
+    this.business.forEach((b: IBusiness) => {
+      if (b.id === parseInt(id)) {
+        objBusiness = b;
+      }
+    });
+    return of(objBusiness);
+  }
 }

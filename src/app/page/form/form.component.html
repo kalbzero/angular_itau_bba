@@ -1,1 +1,72 @@
-<p>form works!</p>
+<div class="form">
+  <div class="form__header">
+    <span class="form__header-title">Polo {{business.name}}</span>
+      <br>
+      <span class="form__header-subtitle">exibindo detalhes do polo {{business.name}}#{{business.id}}</span>
+  </div>
+
+  <div class="form__container">
+    <form [formGroup]="businessForm" (submit)="onSubmit">
+      <p>Detalhes do Endereço</p>
+      <div class="form__container-endereco">
+        <mat-form-field appearance="fill" class="pr3">
+          <mat-label>CEP</mat-label>
+          <input matInput type="tel" mask="00000-000" maxlength="9" placeholder="Só numeros. Ex: 92000-000">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="pr3">
+          <input matInput placeholder="Nome da Rua">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="pr3">
+          <input matInput placeholder="Bairro">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="pr3">
+          <input matInput placeholder="Estado">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <input matInput placeholder="Cidade">
+        </mat-form-field>
+      </div>
+
+      <p>Detalhes da Empresa</p>
+      <div class="form__business">
+        <mat-form-field appearance="fill" class="pr3">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Nome">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="pr3">
+          <mat-label>Business</mat-label>
+          <input matInput placeholder="Business">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="pr3">
+          <mat-label>Valuation</mat-label>
+          <input matInput placeholder="R$ 1.000,00">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="pr3">
+          <mat-label>CNPJ</mat-label>
+          <input matInput type="tel" mask="00.000.000/0000-00" maxlength="18" placeholder="Só números. Ex:20.123.456/0001-20">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Ativo?</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let opt of options" [value]="opt.value">
+              {{opt.label}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="form__buttons">
+        <button mat-raised-button class="form__buttons-voltar" (click)="goBack()">Voltar</button>
+        <button mat-raised-button class="form__buttons-salvar" type="submit">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>

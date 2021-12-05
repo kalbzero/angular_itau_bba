@@ -1,0 +1,17 @@
+.pnf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Myriad Pro';
+
+  &__title {
+    font-size: 60px;
+    line-height: 78px;
+    color: #8C8C8C;
+    font-weight: bold;
+  }
+  &__subtitle {
+    font-size: 36px;
+    line-height: 47px;
+  }
+}
