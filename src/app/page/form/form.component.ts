@@ -1,10 +1,18 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { IBusiness } from 'src/app/interfaces/business';
 import { BusinessService } from 'src/app/service/business.service';
+import { ErrorStateMatcher } from '@angular/material/core';
 
+/** Error when invalid control is dirty, touched, or submitted. */
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -25,9 +33,11 @@ export class FormComponent implements OnInit {
     business: new FormControl('', [Validators.required]),
     valuation: new FormControl(0, [Validators.required]),
     cnpj: new FormControl('', [Validators.required]),
-    cep: new FormControl(0, [Validators.required]),
+    cep: new FormControl(null, [Validators.required]),
     active: new FormControl(false, [Validators.required]),
   });
+
+  matcher = new MyErrorStateMatcher();
 
   constructor(
     private router: Router,
@@ -57,6 +67,12 @@ export class FormComponent implements OnInit {
 
   goBack() {
     this.location.back();
+  }
+
+  getCepInfos() {
+    if (this.businessForm.controls['cep'].value.length == 9) {
+
+    }
   }
 
   onSubmit() {

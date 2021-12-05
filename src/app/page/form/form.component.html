@@ -11,23 +11,26 @@
       <div class="form__container-endereco">
         <mat-form-field appearance="fill" class="pr3">
           <mat-label>CEP</mat-label>
-          <input matInput type="tel" mask="00000-000" maxlength="9" placeholder="Só numeros. Ex: 92000-000">
+          <input matInput formControlName="cep" [errorStateMatcher]="matcher" type="tel" mask="00000-000" maxlength="9" placeholder="Só numeros. Ex: 92000-000" (keyup)="getCepInfos()">
+          <mat-error *ngIf="businessForm.controls['cep'].invalid && (businessForm.controls['cep'].dirty || businessForm.controls['cep'].touched)">
+            CEP é <strong>obrigatório!</strong>
+          </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput placeholder="Nome da Rua">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Nome da Rua">
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput placeholder="Bairro">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Bairro">
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput placeholder="Estado">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Estado">
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <input matInput placeholder="Cidade">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Cidade">
         </mat-form-field>
       </div>
 
@@ -35,22 +38,22 @@
       <div class="form__business">
         <mat-form-field appearance="fill" class="pr3">
           <mat-label>Nome</mat-label>
-          <input matInput placeholder="Nome">
+          <input matInput [errorStateMatcher]="matcher" placeholder="Nome">
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
           <mat-label>Business</mat-label>
-          <input matInput placeholder="Business">
+          <input matInput [errorStateMatcher]="matcher" placeholder="Business">
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
           <mat-label>Valuation</mat-label>
-          <input matInput placeholder="R$ 1.000,00">
+          <input matInput [errorStateMatcher]="matcher" placeholder="R$ 1.000,00">
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
           <mat-label>CNPJ</mat-label>
-          <input matInput type="tel" mask="00.000.000/0000-00" maxlength="18" placeholder="Só números. Ex:20.123.456/0001-20">
+          <input matInput [errorStateMatcher]="matcher" type="tel" mask="00.000.000/0000-00" maxlength="18" placeholder="Só números. Ex:20.123.456/0001-20">
         </mat-form-field>
 
         <mat-form-field appearance="fill">

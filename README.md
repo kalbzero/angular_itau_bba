@@ -29,13 +29,13 @@ Status:
 - Componentes do Angular Material :green_circle:
 - Obrigatóriedade de todos os campos usando RxForms :green_circle:
 
-- Interceptors
-- Uso avançado da linguagem
-- Arquitetura de projeto visando escalabilidade
-- Errorhandler com Toaster
-- Uso de tipagem customizada (models)
-- EN/PT usando i18n (Idioma + R$ vira $)
-- Usar external plugins de forma inteligente visando performance
-- Código comentado (comentário de mais é indicio de código ruim)
-- Fazer componente <app-cep> + EventEmitter para alimentar outros campos
-- Pipes para resolver formatações
+- Interceptors :white_circle:
+- Uso avançado da linguagem :green_circle:
+- Arquitetura de projeto visando escalabilidade :green_circle:
+- Errorhandler com Toaster :white_circle:
+- Uso de tipagem customizada (models) :green_circle:
+- EN/PT usando i18n (Idioma + R$ vira $) :white_circle:
+- Usar external plugins de forma inteligente visando performance :white_circle:
+- Código comentado (comentário de mais é indicio de código ruim) :green_circle:
+- Fazer componente <app-cep> + EventEmitter para alimentar outros campos :yellow_circle:
+- Pipes para resolver formatações :green_circle:
