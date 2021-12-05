@@ -20,6 +20,8 @@ Status:
 
 :white_circle: Não iniciado
 
+Etapa 1:
+
 - Projeto 100% Angular :green_circle:
 - Layout fiel ao proposto :yellow_circle:
 - Sistema de Rotas :green_circle:
@@ -29,6 +31,7 @@ Status:
 - Componentes do Angular Material :green_circle:
 - Obrigatóriedade de todos os campos usando RxForms :green_circle:
 
+Etapa 2:
 
 - Interceptors :white_circle:
 - Uso avançado da linguagem :green_circle:
