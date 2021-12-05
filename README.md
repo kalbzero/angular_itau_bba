@@ -29,6 +29,7 @@ Status:
 - Componentes do Angular Material :green_circle:
 - Obrigatóriedade de todos os campos usando RxForms :green_circle:
 
+
 - Interceptors :white_circle:
 - Uso avançado da linguagem :green_circle:
 - Arquitetura de projeto visando escalabilidade :green_circle:
