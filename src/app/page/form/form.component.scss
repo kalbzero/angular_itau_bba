@@ -36,14 +36,20 @@
   &__buttons {
 
     &-voltar {
-      background-color: #989898;
-      color: #FFFFFF;
+      background-color: $gray;
+      color: $white;
       margin-right: 10px;
     }
     &-salvar {
-      background-color: #FA8341;
-      color: #FFFFFF;
+      background-color: $orangeItau;
+      color: $white;
       width: 125px;
+    }
+    &-salvar:disabled,
+    &-salvar[disabled]{
+      border: 1px solid $saveButtonDisabled;
+      background-color: $saveButtonDisabled;
+      color: $gray;
     }
   }
 }

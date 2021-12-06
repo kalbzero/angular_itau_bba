@@ -6,7 +6,7 @@
   </div>
 
   <div class="form__container">
-    <form [formGroup]="businessForm" (submit)="onSubmit">
+    <form [formGroup]="businessForm" (submit)="onSubmit()">
       <p i18n="Form Address | Address' detail of the Form Page @@formAddressDetail">Detalhes do Endereço</p>
       <div class="form__container-endereco">
         <mat-form-field appearance="fill" class="pr3">
@@ -27,28 +27,32 @@
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+          <input matInput [errorStateMatcher]="matcher"
+            formControlName="rua"
             placeholder="Nome da Rua"
             i18n-placeholder="Form Street | Street of the Form Page @@formStreet"
           >
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+          <input matInput [errorStateMatcher]="matcher"
+            formControlName="bairro"
             placeholder="Bairro"
             i18n-placeholder="Form Neighbordhood | Neighbordhood of the Form Page @@formNeighbordhood"
           >
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+          <input matInput [errorStateMatcher]="matcher"
+            formControlName="estado"
             placeholder="Estado"
             i18n-placeholder="Form State | State of the Form Page @@formState"
           >
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+          <input matInput [errorStateMatcher]="matcher"
+            formControlName="cidade"
             placeholder="Cidade"
             i18n-placeholder="Form City | City of the Form Page @@formCity"
           >
@@ -88,6 +92,7 @@
         <mat-form-field appearance="fill" class="pr3">
           <mat-label i18n="Form Valuation | Valuation of the Form Page @@formValuation">Valuation</mat-label>
           <input matInput formControlName="valuation" [errorStateMatcher]="matcher"
+            mask="separator.2"
             placeholder="R$ 1.000,00"
             i18n-placeholder="Form Valuation Placeholder | Valuation's Placeholder of the Form Page @@formValuationPlaceholder"
           >
@@ -124,8 +129,8 @@
       </div>
 
       <div class="form__buttons">
-        <button mat-raised-button class="form__buttons-voltar" (click)="goBack()" i18n="Form Back Button | Back Button of the Form Page @@formBackButton">Voltar</button>
-        <button mat-raised-button class="form__buttons-salvar" type="submit" i18n="Form Save Button | Save Button of the Form Page @@formSaveButton">Salvar</button>
+        <button mat-raised-button class="form__buttons-voltar" type="button" (click)="goBack()" i18n="Form Back Button | Back Button of the Form Page @@formBackButton">Voltar</button>
+        <button mat-raised-button class="form__buttons-salvar" type="submit" i18n="Form Save Button | Save Button of the Form Page @@formSaveButton" [disabled]="businessForm.valid == false ? true : false">Salvar</button>
       </div>
     </form>
   </div>

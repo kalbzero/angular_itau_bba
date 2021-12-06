@@ -6,6 +6,8 @@ import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { ListComponent } from './page/list/list.component';
 import { FormComponent } from './page/form/form.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { Interceptor } from './interceptors/interceptor.service';
 
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -55,12 +58,18 @@ registerLocaleData(localePt);
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     NgxMaskModule.forRoot(maskConfig),
+    ToastrModule.forRoot(),
     ...angularMaterial,
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: "pt-BR" }
-
+    { provide: LOCALE_ID, useValue: "pt-BR" },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: Interceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

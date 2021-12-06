@@ -33,13 +33,13 @@ Etapa 1:
 
 Etapa 2:
 
-- Interceptors :white_circle:
+- Interceptors :green_circle:
 - Uso avançado da linguagem :green_circle:
 - Arquitetura de projeto visando escalabilidade :green_circle:
 - Errorhandler com Toaster :yellow_circle:
 - Uso de tipagem customizada (models) :green_circle:
 - EN/PT usando i18n (Idioma + R$ vira $) :green_circle:
-- Usar external plugins de forma inteligente visando performance :white_circle:
+- Usar external plugins de forma inteligente visando performance :green_circle: (Angular snippets, autoclose tag, auto rename tag, eslint, prettier, editorConfig)
 - Código comentado (comentário de mais é indicio de código ruim) :green_circle:
-- Fazer componente <app-cep> + EventEmitter para alimentar outros campos :yellow_circle:
+- Fazer componente `<app-cep>` + EventEmitter para alimentar outros campos :green_circle: (Fiz um service para buscar o cep)
 - Pipes para resolver formatações :green_circle:
