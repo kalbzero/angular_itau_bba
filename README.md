@@ -36,7 +36,7 @@ Etapa 2:
 - Interceptors :green_circle:
 - Uso avançado da linguagem :green_circle:
 - Arquitetura de projeto visando escalabilidade :green_circle:
-- Errorhandler com Toaster :yellow_circle:
+- Errorhandler com Toaster :green_circle:
 - Uso de tipagem customizada (models) :green_circle:
 - EN/PT usando i18n (Idioma + R$ vira $) :green_circle:
 - Usar external plugins de forma inteligente visando performance :green_circle: (Angular snippets, autoclose tag, auto rename tag, eslint, prettier, editorConfig)
