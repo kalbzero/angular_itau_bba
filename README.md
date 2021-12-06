@@ -27,7 +27,7 @@ Etapa 1:
 - Sistema de Rotas :green_circle:
 - Usar CSS Grid :green_circle:
 - Sass (.sass ou .scss) :green_circle:
-- Máscara nos inputs :yellow_circle:
+- Máscara nos inputs :green_circle:
 - Componentes do Angular Material :green_circle:
 - Obrigatóriedade de todos os campos usando RxForms :green_circle:
 
@@ -38,7 +38,7 @@ Etapa 2:
 - Arquitetura de projeto visando escalabilidade :green_circle:
 - Errorhandler com Toaster :white_circle:
 - Uso de tipagem customizada (models) :green_circle:
-- EN/PT usando i18n (Idioma + R$ vira $) :white_circle:
+- EN/PT usando i18n (Idioma + R$ vira $) :yellow_circle:
 - Usar external plugins de forma inteligente visando performance :white_circle:
 - Código comentado (comentário de mais é indicio de código ruim) :green_circle:
 - Fazer componente <app-cep> + EventEmitter para alimentar outros campos :yellow_circle:
