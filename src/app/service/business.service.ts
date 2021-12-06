@@ -70,4 +70,22 @@ export class BusinessService {
     });
     return of(objBusiness);
   }
+
+  /**
+   * Criei uma variasvel auxiliar para evitar o alerta citado acima
+   *
+   * @param obj Objeto do tipo Business
+   * @returns o objeto salvo
+   */
+  setBusiness(obj: IBusiness): Observable<IBusiness> {
+    let objBusiness: IBusiness = {} as IBusiness;
+    this.business.forEach((b: IBusiness) => {
+      if (b.id === obj.id) {
+        let index = this.business.indexOf(b);
+        this.business[index] = obj;
+        objBusiness = obj;
+      }
+    });
+    return of(objBusiness);
+  }
 }
