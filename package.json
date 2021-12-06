@@ -4,9 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:en": "ng serve --configuration=en",
     "build": "ng build",
+    "build:en": "ng build --configuration=en",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "int:extract": "ng extract-i18n --output-path locale"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +32,7 @@
     "@angular-devkit/build-angular": "~12.2.11",
     "@angular/cli": "~12.2.11",
     "@angular/compiler-cli": "~12.2.0",
+    "@angular/localize": "^12.2.13",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.8.0",

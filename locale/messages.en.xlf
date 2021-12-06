@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="formTitle" datatype="html">
+        <source>Polo <x id="INTERPOLATION" equiv-text="{{business.name}}"/></source>
+        <target><x id="INTERPOLATION" equiv-text="{{business.name}}"/> Center</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description"> Title of the Form Page </note>
+        <note priority="1" from="meaning">Form Title </note>
+      </trans-unit>
+      <trans-unit id="formSubtitle" datatype="html">
+        <source>exibindo detalhes do polo <x id="INTERPOLATION" equiv-text="{{business.name}}"/>#<x id="INTERPOLATION_1" equiv-text="{{business.id}}"/></source>
+        <target>displaying details of the <x id="INTERPOLATION" equiv-text="{{business.name}}"/>#<x id="INTERPOLATION_1" equiv-text="{{business.id}}"/> center</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description"> Subtitle of the Form Page </note>
+        <note priority="1" from="meaning">Form Subtitle </note>
+      </trans-unit>
+      <trans-unit id="formAddressDetail" datatype="html">
+        <source>Detalhes do Endereço</source>
+        <target>Address Details</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description"> Address&apos; detail of the Form Page </note>
+        <note priority="1" from="meaning">Form Address </note>
+      </trans-unit>
+      <trans-unit id="formZip" datatype="html">
+        <source>CEP</source>
+        <target>Zip code</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description"> Zip of the Form Page </note>
+        <note priority="1" from="meaning">Form Zip </note>
+      </trans-unit>
+      <trans-unit id="formZipPlaceholder" datatype="html">
+        <source>Só numeros. Ex: 92000-000</source>
+        <target>Just numbers. Ex: 92000-000</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description"> Zip placeholder of the Form Page </note>
+        <note priority="1" from="meaning">Form Zip Placeholder </note>
+      </trans-unit>
+      <trans-unit id="formZipMessage" datatype="html">
+        <source> CEP é <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>obrigatório!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target> Zip code is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>required!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+        <note priority="1" from="description"> Zip error message </note>
+        <note priority="1" from="meaning">Form Zip Error </note>
+      </trans-unit>
+      <trans-unit id="formStreet" datatype="html">
+        <source>Nome da Rua</source>
+        <target>Street</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description"> Street of the Form Page </note>
+        <note priority="1" from="meaning">Form Street </note>
+      </trans-unit>
+      <trans-unit id="formNeighbordhood" datatype="html">
+        <source>Bairro</source>
+        <target>Neighborhood</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description"> Neighbordhood of the Form Page </note>
+        <note priority="1" from="meaning">Form Neighbordhood </note>
+      </trans-unit>
+      <trans-unit id="formState" datatype="html">
+        <source>Estado</source>
+        <target>State</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description"> State of the Form Page </note>
+        <note priority="1" from="meaning">Form State </note>
+      </trans-unit>
+      <trans-unit id="formCity" datatype="html">
+        <source>Cidade</source>
+        <target>City</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description"> City of the Form Page </note>
+        <note priority="1" from="meaning">Form City </note>
+      </trans-unit>
+      <trans-unit id="formName" datatype="html">
+        <source>Nome</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description"> Name of the Form Page </note>
+        <note priority="1" from="meaning">Form Name </note>
+      </trans-unit>
+      <trans-unit id="formNamePlaceholder" datatype="html">
+        <source>Nome</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description"> Name of the Form Page </note>
+        <note priority="1" from="meaning">Form Name </note>
+      </trans-unit>
+      <trans-unit id="formNameError" datatype="html">
+        <source> Nome é <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>obrigatório!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target> Name is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>required!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+        <note priority="1" from="description"> Name&apos;s Error of the Form Page </note>
+        <note priority="1" from="meaning">Form Name Error </note>
+      </trans-unit>
+      <trans-unit id="formBusiness" datatype="html">
+        <source>Business</source>
+        <target>Business</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="description"> Business of the Form Page </note>
+        <note priority="1" from="meaning">Form Business </note>
+      </trans-unit>
+      <trans-unit id="formBusinessPlaceholder" datatype="html">
+        <source>Business</source>
+        <target>Business</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="description"> Business&apos; Placeholder of the Form Page </note>
+        <note priority="1" from="meaning">Form Business Placeholder </note>
+      </trans-unit>
+      <trans-unit id="formBusinessError" datatype="html">
+        <source> Business é <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>obrigatório!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target> Business is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>required!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+        <note priority="1" from="description"> Business&apos; Error of the Form Page </note>
+        <note priority="1" from="meaning">Form Business Error </note>
+      </trans-unit>
+      <trans-unit id="formValuation" datatype="html">
+        <source>Valuation</source>
+        <target>Valuation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <note priority="1" from="description"> Valuation of the Form Page </note>
+        <note priority="1" from="meaning">Form Valuation </note>
+      </trans-unit>
+      <trans-unit id="formValuationPlaceholder" datatype="html">
+        <source>R$ 1.000,00</source>
+        <target>US$ 1,000.00</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="description"> Valuation&apos;s Placeholder of the Form Page </note>
+        <note priority="1" from="meaning">Form Valuation Placeholder </note>
+      </trans-unit>
+      <trans-unit id="formValuationError" datatype="html">
+        <source> Valuation é <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>obrigatório!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target> Valuation is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>required!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+        <note priority="1" from="description"> Valuation&apos;s Error of the Form Page </note>
+        <note priority="1" from="meaning">Form Valuation </note>
+      </trans-unit>
+      <trans-unit id="formCnpj" datatype="html">
+        <source>CNPJ</source>
+        <target>CNPJ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <note priority="1" from="description"> CNPJ of the Form Page </note>
+        <note priority="1" from="meaning">Form CNPJ </note>
+      </trans-unit>
+      <trans-unit id="formCnpjPlaceholder" datatype="html">
+        <source>Só números. Ex:20.123.456/0001-20</source>
+        <target>Just numbers. Ex:20.123.456/0001-20</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <note priority="1" from="description"> CNPJ&apos;s Placeholder of the Form Page </note>
+        <note priority="1" from="meaning">Form CNPJ Placeholder </note>
+      </trans-unit>
+      <trans-unit id="formCnpjError" datatype="html">
+        <source> CNPJ é <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>obrigatório!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target> CNPJ is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>required!<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">111,112</context>
+        </context-group>
+        <note priority="1" from="description"> CNPJ&apos;s Error of the Form Page </note>
+        <note priority="1" from="meaning">Form CNPJ </note>
+      </trans-unit>
+      <trans-unit id="formActive" datatype="html">
+        <source>Ativo?</source>
+        <target>Active?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <note priority="1" from="description"> Active of the Form Page </note>
+        <note priority="1" from="meaning">Form Active </note>
+      </trans-unit>
+      <trans-unit id="formBackButton" datatype="html">
+        <source>Voltar</source>
+        <target>Back</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+        <note priority="1" from="description"> Back Button of the Form Page </note>
+        <note priority="1" from="meaning">Form Back Button </note>
+      </trans-unit>
+      <trans-unit id="formSaveButton" datatype="html">
+        <source>Salvar</source>
+        <target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/form/form.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+        <note priority="1" from="description"> Save Button of the Form Page </note>
+        <note priority="1" from="meaning">Form Save Button </note>
+      </trans-unit>
+      <trans-unit id="listTitle" datatype="html">
+        <source>Polos Itaú</source>
+        <target>Itaú Centers</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <note priority="1" from="description"> Title of the List Page </note>
+        <note priority="1" from="meaning">List Title </note>
+      </trans-unit>
+      <trans-unit id="listSubtitle" datatype="html">
+        <source>confira abaixo alguns dos principais polos do itaú</source>
+        <target>check out some of the main centers of Itau below</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+        <note priority="1" from="description"> Subtitle of the List Page </note>
+        <note priority="1" from="meaning">List Subtitle </note>
+      </trans-unit>
+      <trans-unit id="listSearch" datatype="html">
+        <source>Pesquisar...</source>
+        <target>Search...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description"> Search of the List Page </note>
+        <note priority="1" from="meaning">List Search </note>
+      </trans-unit>
+      <trans-unit id="tableColName" datatype="html">
+        <source> Nome </source>
+        <target> Name </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <note priority="1" from="description"> Column&apos;s Name of the Table </note>
+        <note priority="1" from="meaning">Table Name </note>
+      </trans-unit>
+      <trans-unit id="tableColBusiness" datatype="html">
+        <source> Business </source>
+        <target> Business </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <note priority="1" from="description"> Column&apos;s Business of the Table </note>
+        <note priority="1" from="meaning">Table Business </note>
+      </trans-unit>
+      <trans-unit id="tableColValuation" datatype="html">
+        <source> Valuation </source>
+        <target> Valuation </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <note priority="1" from="description"> Column&apos;s Valuation of the Table </note>
+        <note priority="1" from="meaning">Table Valuation </note>
+      </trans-unit>
+      <trans-unit id="currencyLocation" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{element.valuation | currency:&apos;BRL&apos; }}"/> </source>
+        <target> <x id="INTERPOLATION" equiv-text="{{element.valuation | currency:&apos;USD&apos; }}"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <note priority="1" from="description"> Currency by location </note>
+        <note priority="1" from="meaning">Currency </note>
+      </trans-unit>
+      <trans-unit id="tableColSituation" datatype="html">
+        <source> Situação </source>
+        <target> Situação </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <note priority="1" from="description"> Column&apos;s Situation of the Table </note>
+        <note priority="1" from="meaning">Table Situation </note>
+      </trans-unit>
+      <trans-unit id="tableColAction" datatype="html">
+        <source> Ação </source>
+        <target> Action </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+        <note priority="1" from="description"> Column&apos;s Action of the Table </note>
+        <note priority="1" from="meaning">Table Action </note>
+      </trans-unit>
+      <trans-unit id="tablePaginator" datatype="html">
+        <source>Selecione um dos pólos</source>
+        <target> Select one of the centers </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/page/list/list.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <note priority="1" from="description"> Paginator of the Table </note>
+        <note priority="1" from="meaning">Table Paginator </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

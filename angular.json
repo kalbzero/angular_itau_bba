@@ -67,6 +67,14 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "aot": true,
+              "localize": [
+                "en"
+              ],
+              "outputPath": "dist/itauBBA-en/",
+              "i18nMissingTranslation": "error"
             }
           },
           "defaultConfiguration": "production"
@@ -76,6 +84,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angularItauBba:build:production"
+            },
+            "en": {
+              "browserTarget": "angularItauBba:build:en"
             },
             "development": {
               "browserTarget": "angularItauBba:build:development"

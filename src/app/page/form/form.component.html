@@ -1,64 +1,121 @@
 <div class="form">
   <div class="form__header">
-    <span class="form__header-title">Polo {{business.name}}</span>
+    <span class="form__header-title" i18n="Form Title | Title of the Form Page @@formTitle">Polo {{business.name}}</span>
       <br>
-      <span class="form__header-subtitle">exibindo detalhes do polo {{business.name}}#{{business.id}}</span>
+      <span class="form__header-subtitle" i18n="Form Subtitle | Subtitle of the Form Page @@formSubtitle">exibindo detalhes do polo {{business.name}}#{{business.id}}</span>
   </div>
 
   <div class="form__container">
     <form [formGroup]="businessForm" (submit)="onSubmit">
-      <p>Detalhes do Endereço</p>
+      <p i18n="Form Address | Address' detail of the Form Page @@formAddressDetail">Detalhes do Endereço</p>
       <div class="form__container-endereco">
         <mat-form-field appearance="fill" class="pr3">
-          <mat-label>CEP</mat-label>
-          <input matInput formControlName="cep" [errorStateMatcher]="matcher" type="tel" mask="00000-000" maxlength="9" placeholder="Só numeros. Ex: 92000-000" (keyup)="getCepInfos()">
-          <mat-error *ngIf="businessForm.controls['cep'].invalid && (businessForm.controls['cep'].dirty || businessForm.controls['cep'].touched)">
+          <mat-label i18n="Form Zip | Zip of the Form Page @@formZip">CEP</mat-label>
+          <input
+            matInput formControlName="cep" [errorStateMatcher]="matcher"
+            type="tel" mask="00000-000" maxlength="9"
+            placeholder="Só numeros. Ex: 92000-000"
+            i18n-placeholder="Form Zip Placeholder | Zip placeholder of the Form Page @@formZipPlaceholder"
+            (keyup)="getCepInfos()"
+            >
+          <mat-error
+            *ngIf="businessForm.controls['cep'].invalid && (businessForm.controls['cep'].dirty || businessForm.controls['cep'].touched)"
+            i18n="Form Zip Error | Zip error message @@formZipMessage"
+          >
             CEP é <strong>obrigatório!</strong>
           </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Nome da Rua">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+            placeholder="Nome da Rua"
+            i18n-placeholder="Form Street | Street of the Form Page @@formStreet"
+          >
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Bairro">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+            placeholder="Bairro"
+            i18n-placeholder="Form Neighbordhood | Neighbordhood of the Form Page @@formNeighbordhood"
+          >
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Estado">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+            placeholder="Estado"
+            i18n-placeholder="Form State | State of the Form Page @@formState"
+          >
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <input matInput [errorStateMatcher]="matcher" [disabled]="true" placeholder="Cidade">
+          <input matInput [errorStateMatcher]="matcher" [disabled]="true"
+            placeholder="Cidade"
+            i18n-placeholder="Form City | City of the Form Page @@formCity"
+          >
         </mat-form-field>
       </div>
 
       <p>Detalhes da Empresa</p>
       <div class="form__business">
         <mat-form-field appearance="fill" class="pr3">
-          <mat-label>Nome</mat-label>
-          <input matInput [errorStateMatcher]="matcher" placeholder="Nome">
+          <mat-label i18n="Form Name | Name of the Form Page @@formName">Nome</mat-label>
+          <input matInput formControlName="name" [errorStateMatcher]="matcher"
+            placeholder="Nome"
+            i18n-placeholder="Form Name | Name of the Form Page @@formNamePlaceholder"
+          >
+          <mat-error
+            *ngIf="businessForm.controls['name'].invalid && (businessForm.controls['name'].dirty || businessForm.controls['name'].touched)"
+            i18n="Form Name Error | Name's Error of the Form Page @@formNameError"
+          >
+            Nome é <strong>obrigatório!</strong>
+          </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <mat-label>Business</mat-label>
-          <input matInput [errorStateMatcher]="matcher" placeholder="Business">
+          <mat-label i18n="Form Business | Business of the Form Page @@formBusiness">Business</mat-label>
+          <input matInput formControlName="business" [errorStateMatcher]="matcher"
+            placeholder="Business"
+            i18n-placeholder="Form Business Placeholder | Business' Placeholder of the Form Page @@formBusinessPlaceholder"
+          >
+          <mat-error
+            *ngIf="businessForm.controls['business'].invalid && (businessForm.controls['business'].dirty || businessForm.controls['business'].touched)"
+            i18n="Form Business Error | Business' Error of the Form Page @@formBusinessError"
+          >
+            Business é <strong>obrigatório!</strong>
+          </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <mat-label>Valuation</mat-label>
-          <input matInput [errorStateMatcher]="matcher" placeholder="R$ 1.000,00">
+          <mat-label i18n="Form Valuation | Valuation of the Form Page @@formValuation">Valuation</mat-label>
+          <input matInput formControlName="valuation" [errorStateMatcher]="matcher"
+            placeholder="R$ 1.000,00"
+            i18n-placeholder="Form Valuation Placeholder | Valuation's Placeholder of the Form Page @@formValuationPlaceholder"
+          >
+          <mat-error
+            *ngIf="businessForm.controls['valuation'].invalid && (businessForm.controls['valuation'].dirty || businessForm.controls['valuation'].touched)"
+            i18n="Form Valuation | Valuation's Error of the Form Page @@formValuationError"
+          >
+            Valuation é <strong>obrigatório!</strong>
+          </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="pr3">
-          <mat-label>CNPJ</mat-label>
-          <input matInput [errorStateMatcher]="matcher" type="tel" mask="00.000.000/0000-00" maxlength="18" placeholder="Só números. Ex:20.123.456/0001-20">
+          <mat-label i18n="Form CNPJ | CNPJ of the Form Page @@formCnpj">CNPJ</mat-label>
+          <input matInput formControlName="cnpj" [errorStateMatcher]="matcher" type="tel" mask="00.000.000/0000-00" maxlength="18"
+            placeholder="Só números. Ex:20.123.456/0001-20"
+            i18n-placeholder="Form CNPJ Placeholder | CNPJ's Placeholder of the Form Page @@formCnpjPlaceholder"
+          >
+          <mat-error
+            *ngIf="businessForm.controls['cnpj'].invalid && (businessForm.controls['cnpj'].dirty || businessForm.controls['cnpj'].touched)"
+            i18n="Form CNPJ | CNPJ's Error of the Form Page @@formCnpjError"
+          >
+            CNPJ é <strong>obrigatório!</strong>
+          </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <mat-label>Ativo?</mat-label>
-          <mat-select>
+          <mat-label i18n="Form Active | Active of the Form Page @@formActive">Ativo?</mat-label>
+          <mat-select formControlName="active">
             <mat-option *ngFor="let opt of options" [value]="opt.value">
               {{opt.label}}
             </mat-option>
@@ -67,8 +124,8 @@
       </div>
 
       <div class="form__buttons">
-        <button mat-raised-button class="form__buttons-voltar" (click)="goBack()">Voltar</button>
-        <button mat-raised-button class="form__buttons-salvar" type="submit">Salvar</button>
+        <button mat-raised-button class="form__buttons-voltar" (click)="goBack()" i18n="Form Back Button | Back Button of the Form Page @@formBackButton">Voltar</button>
+        <button mat-raised-button class="form__buttons-salvar" type="submit" i18n="Form Save Button | Save Button of the Form Page @@formSaveButton">Salvar</button>
       </div>
     </form>
   </div>

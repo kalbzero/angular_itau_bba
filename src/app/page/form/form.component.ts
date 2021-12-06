@@ -35,6 +35,9 @@ export class FormComponent implements OnInit {
     cnpj: new FormControl('', [Validators.required]),
     cep: new FormControl(null, [Validators.required]),
     active: new FormControl(false, [Validators.required]),
+
+    // rua: new FormControl(''),
+    // bairro: new FormControl(''),
   });
 
   matcher = new MyErrorStateMatcher();
@@ -60,6 +63,15 @@ export class FormComponent implements OnInit {
           this.router.navigateByUrl('/404', { skipLocationChange: true })
         } else {
           this.business = business;
+          this.businessForm.patchValue({
+            id: business.id,
+            name: business.name,
+            business: business.business,
+            valuation: business.valuation,
+            active: business.active,
+            cep: business.cep,
+            cnpj: business.cnpj,
+          });
         }
       }
     });
@@ -70,7 +82,7 @@ export class FormComponent implements OnInit {
   }
 
   getCepInfos() {
-    if (this.businessForm.controls['cep'].value.length == 9) {
+    if (this.businessForm.controls['cep'].value.length == 8) {
 
     }
   }
