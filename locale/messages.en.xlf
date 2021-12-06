@@ -2,6 +2,16 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="languageLocale" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;cursor-pointer&quot;&gt;"/>PT<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong class=&quot;cursor-pointer&quot;&gt;"/>EN<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/component/header/header.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description"> Shows the language locale </note>
+        <note priority="1" from="meaning">Header Language </note>
+      </trans-unit>
       <trans-unit id="formTitle" datatype="html">
         <source>Polo <x id="INTERPOLATION" equiv-text="{{business.name}}"/></source>
         <target><x id="INTERPOLATION" equiv-text="{{business.name}}"/> Center</target>
